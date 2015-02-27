@@ -5,7 +5,6 @@ namespace BdbStudios\Bundle\TimezoneAwareDiaryBundle\DependencyInjection;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 
-
 class Configuration implements ConfigurationInterface
 {
     /**
