@@ -16,7 +16,7 @@ trait Identifiers
 
     /**
      * @param $id
-     * @return Identifiers
+     * @return HasIdentifiers
      *
      * @throws \LogicException
      */
@@ -58,6 +58,10 @@ trait Identifiers
         if (false === is_string($uniqueIdentifier)) {
             throw new \LogicException('A string was expected got ' . gettype($uniqueIdentifier));
         }
+
+        $this->uniqueId = $uniqueIdentifier;
+
+        return $this;
     }
 
     /**
