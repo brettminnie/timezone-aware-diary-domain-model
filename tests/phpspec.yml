@@ -1,0 +1,21 @@
+suites:
+    default:
+        namespace: BdbStudios\Bundle\TimezoneAwareDiaryBundle
+        spec_prefix: Spec
+        spec_path: test
+
+extensions:
+  - PhpSpec\Extension\CodeCoverageExtension
+
+code_coverage:
+  whitelist:
+    - src/BdbStudios/Bundle/TimezoneAwareDiaryBundle/DependencyInjection
+    - src/BdbStudios/Bundle/TimezoneAwareDiaryBundle/Entity
+  whitelist_files:
+    - src/BdbStudios/Bundle/TimezoneAwareDiaryBundle/TimezoneAwareDiaryBundle.php
+  format:
+    - html
+    - clover
+  output:
+    html: test/build/coverage
+    clover: test/build/coverage.xml
