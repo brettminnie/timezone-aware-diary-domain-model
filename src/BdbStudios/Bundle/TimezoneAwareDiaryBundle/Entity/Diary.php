@@ -12,4 +12,5 @@ use BdbStudios\Bundle\TimezoneAwareDiaryBundle\Entity\Decorators\Identifiers;
 class Diary implements HasIdentifiers
 {
     use Identifiers;
+
 }
